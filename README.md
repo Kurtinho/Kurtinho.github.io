@@ -1,1 +1,0 @@
-# Kurtinho.github.io
