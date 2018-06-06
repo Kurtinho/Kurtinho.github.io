@@ -1,0 +1,161 @@
+h3 {
+    font-size: 2.2em;  /*Schriftgröße der 3.Überschrift*/
+	font-weight: bold; /*Schrift dick*/
+	line-height: 1.2em; /*alles Groß*/
+	text-transform: uppercase; /*Großbuchstaben*/
+}
+
+p {
+	margin: 40px 0;
+}
+
+
+
+/* MQ STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) { 
+    /*auf Bildschirm einstellen*/
+	.uk-overlay-panel {
+		left: 0;
+		width: 100%;
+		top: auto;
+		padding: 15px 10px;
+		box-sizing: border-box;
+	}
+	p {
+		margin: 10px 0; /*Text einrücken*/
+	 }
+}
+*{
+	margin: 0; /*Alles auf eine Größe einstellen*/
+	padding: 1; /*Alles mittig*/
+	box-sizing: border-box;
+}
+
+html{
+	font: normal 16px sans-serif; /*Schriftart*/
+	color: #555;
+}
+
+ul, nav{
+	list-style: none; /*kein Styling in der nav-Leiste*/
+}
+
+a{
+	text-decoration: none; /*link nicht unterstrichen*/
+	cursor: pointer;
+    opacity: 0.9; /* leicht durchsichtig*/
+}
+
+section{
+	/*einstellen der mittigkeit von Überschriften*/
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 125px 100px;
+}
+
+@media (max-width: 1000px){
+
+	section{
+		padding: 100px 50px; /*einstellen der mittigkeit aller Texte in jeder Displaygröße*/
+	}
+
+}
+
+section h3.title{
+    
+/*weitere einstellung der 3.Überschrift*/
+	color: #414a4f;
+	text-transform: capitalize; 
+	font: bold 32px 'Open Sans', sans-serif;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+section p{
+    /*Stylen der Paragraphen*/
+	max-width: 800px;
+	text-align: center;
+	margin-bottom: 35px;
+	padding: 0 20px;
+	line-height: 2;
+}
+
+
+
+header{
+    /*Stylen des Headers*/
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 35px 100px;
+    background-image: url('../img/header-test-1.jpg');
+}
+
+header nav{
+	display: flex;
+}
+
+header nav li{
+	margin: 0 15px; /*Stylen der Nav-Leiste*/
+}
+
+@media (max-width: 1000px){
+	header{
+		padding: 20px 50px; /*Anpassen des Headers für alle Displaygrößen*/
+	}
+}
+
+.hero h1{
+    /*Stylen der 1.Überschrift*/
+	font: bold 60px 'Open Sans', sans-serif;
+	margin-bottom: 15px;
+}
+
+.hero h3{
+    /*Stylen der 3.Überschrift*/
+	font: normal 28px 'Open Sans', sans-serif;
+	margin-bottom: 20px;
+}
+
+@media (max-width: 800px){
+/*Stylen für alle Geräte*/
+	.hero{
+		min-height: 20px;
+	}
+
+	.hero h1{
+		font-size: 48px;
+	}
+
+	.hero h3{
+		font-size: 24px;
+	}
+
+}
+/*-------------
+ 	Footer
+-------------*/
+
+footer p{
+	text-transform: uppercase;
+	font-size: 14px;
+	color: rgba(255,255,255,0.6);
+	margin-bottom: 10px;
+}
+
+footer p a{
+	color: #fff;
+}
+
+@media (max-width: 700px){
+
+	footer{
+		padding: 80px 15px;
+	}
+
+}
+
